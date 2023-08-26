@@ -19,11 +19,13 @@ Install-Module -Name 7Zip4Powershell -force
 
 Expand-Archive -Path C:\Users\win64.zip -DestinationPath C:\Users\
 
-Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -TargetPath "C:\Program Files\"
+
 
 invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile "C:\Users\app.zip"
 
 Expand-Archive -Path C:\Users\app.zip -DestinationPath C:\Users\ProJ03-main\app-64\resources
+
+Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -TargetPath "C:\Program Files\"
 
 Remove-Item -Force -Recurse 'C:\Users\win64.zip', 'C:\Users\ProJ03-main', 'app.zip'
 
