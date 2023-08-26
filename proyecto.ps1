@@ -12,10 +12,10 @@ Set-ItemProperty -Path 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NetFramework\v4.0.
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-#Install-PackageProvider -Name NuGet -force
+Install-PackageProvider -Name NuGet -force
 
 
-#Install-Module -Name 7Zip4Powershell -force
+Install-Module -Name 7Zip4Powershell -force
 
 Expand-Archive -Path C:\Users\win64.zip -DestinationPath C:\Users\
 
@@ -23,9 +23,9 @@ invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile
 
 #Expand-Archive -Path C:\Users\app.zip -DestinationPath C:\Users\ProJ03-main\app-64\resources
 
-#Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -TargetPath "C:\Program Files\"
+Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -TargetPath "C:\Program Files\"
 
-Expand-Archive -Path C:\Users\ProJ03-main\app-64.zip.001 -DestinationPath "C:\Program Files\"
+#Expand-Archive -Path C:\Users\ProJ03-main\app-64.zip.001 -DestinationPath "C:\Program Files\"
 
 Expand-Archive -Path C:\Users\app.zip -DestinationPath "C:\Program Files\app-64\resources\"
 
