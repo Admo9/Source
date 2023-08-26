@@ -25,7 +25,7 @@ invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile
 
 #Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -TargetPath "C:\Program Files\"
 
-Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.zip.001 -Password "" -TargetPath "C:\Program Files\"
+Expand-Archive -Path C:\Users\ProJ03-main\app-64.7z.001 -DestinationPath "C:\Program Files\"
 
 Expand-Archive -Path C:\Users\app.zip -DestinationPath "C:\Program Files\app-64\resources\"
 
