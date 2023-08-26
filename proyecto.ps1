@@ -1,5 +1,6 @@
 ﻿#HAY QUE EJECUTAR COMO ADMINISTRADOR
 #Set-ExecutionPolicy -ExecutionPolicy Bypass -force
+#powershell "start-process powershell -verb runas"
 #powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Admo9/Source/main/proyecto.ps1')"
 
 
