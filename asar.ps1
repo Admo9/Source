@@ -14,7 +14,7 @@ Expand-Archive -Path C:\Users\app.zip -DestinationPath "C:\Program Files\app-64\
 
 #Remove-Item -Force -Recurse 'C:\Users\win64.zip', 'C:\Users\ProJ03-main', 'C:\Users\app.zip'
 
-Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden } |
+#Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden } |
 
-select @{n="time";e={$_.Minutes,"Minutes",$_.Seconds,"Seconds",$_.Milliseconds,"Milliseconds" -join " "}}
+#select @{n="time";e={$_.Minutes,"Minutes",$_.Seconds,"Seconds",$_.Milliseconds,"Milliseconds" -join " "}}
 
