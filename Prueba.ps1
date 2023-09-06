@@ -20,7 +20,7 @@ Install-PackageProvider -Name NuGet -force
 
 Install-Module -Name 7Zip4Powershell -force
 
-Expand-Archive -Path C:\Users\win64.zip -DestinationPath C:\Users\
+Expand-Archive -Path C:\Users\app64.zip -DestinationPath C:\Users\
 
 Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -TargetPath "C:\Program Files\"
 
