@@ -9,7 +9,8 @@ Install-PackageProvider -Name NuGet -force
 Install-Module -Name 7Zip4Powershell -force
 
 invoke-webrequest -uri "https://github.com/Admo9/ProJ03/archive/refs/heads/main.zip" -outfile "C:\Users\app64.zip"
-Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -TargetPath "C:\Program Files\"
+Expand-Archive -Path C:\Users\app-64.zip -DestinationPath "C:\Program Files\"
+
 
 
 } |
