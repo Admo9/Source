@@ -1,9 +1,5 @@
 #PowerShell -ExecutionPolicy bypass
 
-measure-command {
-
 invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile "C:\Users\app.zip"
 
-} |
 
-select @{n="time";e={$_.Minutes,"Minutes",$_.Seconds,"Seconds",$_.Milliseconds,"Milliseconds" -join " "}}
