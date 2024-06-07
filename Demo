@@ -1,5 +1,7 @@
 #PowerShell -ExecutionPolicy bypass
 
-invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile "C:\Users\app.zip"
+#invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile "C:\Users\app.zip"
+
+invoke-webrequest -uri "https://github.com/Admo9/ProJ01/raw/main/win64.zip" -outfile "C:\Users\win64.zip"
 
 
