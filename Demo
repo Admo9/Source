@@ -1,4 +1,4 @@
-PowerShell -ExecutionPolicy bypass
+#PowerShell -ExecutionPolicy bypass
 
 measure-command {
 
