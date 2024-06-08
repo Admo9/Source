@@ -2,8 +2,6 @@
 
 start-process powershell –verb runAs
 
-Fuente: https://www.enmimaquinafunciona.com/pregunta/2669/obtencion-de-privilegios-de-administrador-en-powershell
-
 #invoke-webrequest -uri "https://github.com/Admo9/Data/raw/main/app.zip" -outfile "C:\Users\app.zip"
 
 #NSSM
